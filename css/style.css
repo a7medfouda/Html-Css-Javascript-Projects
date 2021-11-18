@@ -1,0 +1,256 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap');
+/* google fonts */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.container {
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    width: 571px;
+    max-width: 100%;
+    display: flex;
+    /* position: relative; */
+}
+.one,
+.two {
+    width: 50%;
+    min-height: 310px;
+    /* background-color: turquoise; */
+    position: relative;
+}
+p {
+    font-size: 12px;
+}
+.sign-in-form {
+    padding: 30px 10px;
+    /* background-color: red; */
+}
+.sign-in-form-move {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+.sign-in-form h1 {
+    /* background-color: grey; */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blue; */
+    max-width: 120px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.use-account {
+    /* background-color: turquoise; */
+    text-align: center;
+}
+form {
+    /* background-color: yellow; */
+    text-align: center;
+    margin: 10px 0;
+}
+.forgot-password {
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn {
+    text-align: center;
+}
+.sign-in-form button {
+    text-align: center;
+    background-color: #ff4b2b;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.sign-in-form button:active {
+    transform: scale(.95);
+}
+.welcome-back {
+    background: linear-gradient(to left, #ff4b2b, #ff416c) no-repeat 0 0 /cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px 10px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+.welcome-back-move {
+    z-index: 11;
+    opacity: 1;
+}
+.welcome-back p {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px 0;
+}
+.welcome-back button {
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all .5s;
+}
+/* -------------------- */
+.overlay-in {
+    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 /cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.overlay-in-move {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: all .5s;
+    opacity: 0;
+}
+.overlay-in p {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px 0;
+}
+.overlay-in button {
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all .5s;
+}
+/* ------- */
+.creat-account {
+    padding: 30px 10px;
+    transition: all .5s;
+}
+.creat-account-move {
+    position: absolute;
+    z-index: 123;
+}
+.creat-account h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.na,
+.em,
+.pas {
+    margin-bottom: 10px;
+}
+.na input,
+.em input,
+.pas input{
+    background-color: #efefef;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    width: 200px;
+}
+.na input::placeholder,
+.em input::placeholder,
+.pas input::placeholder {
+    font-size: 12px;
+}
+.na input:focus,
+.em input:focus,
+.pas input:focus {
+    outline: none;
+}
+.creat-account button {
+    text-align: center;
+    background-color: #ff4b2b;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.creat-account button:active {
+    transform: scale(.95);
+}
